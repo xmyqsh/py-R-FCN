@@ -1,3 +1,8 @@
+
+Use [py-R-FCN](https://github.com/Orpine/py-R-FCN) with [Microsoft-version Caffe](https://github.com/Microsoft/caffe) merging on [caffe/master](git@github.com:BVLC/caffe.git) can run `ResNet-101` with `128 batch_size` on a single `GTX 1080` which use a comparable graphics memory and has a comparable speed comparing to [py-faster-rcnn](https://github.com/xmyqsh/py-faster-rcnn) with the configuration of `ResNet-50` and `64 batch_size`.
+
+---
+
 # py-R-FCN
 R-FCN: Object Detection via Region-based Fully Convolutional Networks
 
@@ -82,14 +87,16 @@ Any NVIDIA GPU with 6GB or larger memory is OK(4GB is enough for ResNet-50).
 ### Installation
 1. Clone the R-FCN repository
   ```Shell
-  git clone https://github.com/Orpine/py-R-FCN.git
+  # Make sure to clone with --recursive
+  git clone --recursive https://github.com/xmyqsh/py-R-FCN.git
   ```
   We'll call the directory that you cloned R-FCN into `RFCN_ROOT`
 
-2. Clone the Caffe repository
+2. Clone R-FCN into `FRCN_ROOT`
+
   ```Shell
   cd $RFCN_ROOT
-  git clone https://github.com/Microsoft/caffe.git
+  git submodule update --init --recursive
   ```
   [optional] 
   ```Shell
