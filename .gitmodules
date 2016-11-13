@@ -1,0 +1,3 @@
+[submodule "caffe-rfcn"]
+	path = caffe-rfcn
+	url = git@github.com:xmyqsh/caffe-rfcn.git
