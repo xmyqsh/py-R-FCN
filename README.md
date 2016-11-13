@@ -1,3 +1,4 @@
+# Great level up than [py-faster-rcnn](https://github.com/xmyqsh/py-faster-rcnn)
 
 Use [py-R-FCN](https://github.com/Orpine/py-R-FCN) with [Microsoft-version Caffe](https://github.com/Microsoft/caffe) merging on [caffe/master](git@github.com:BVLC/caffe.git) can run `ResNet-101` with `128 batch_size` on a single `GTX 1080` which use a comparable graphics memory and has a comparable speed comparing to [py-faster-rcnn](https://github.com/xmyqsh/py-faster-rcnn) with the configuration of `ResNet-50` and `64 batch_size`.
 
